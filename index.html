@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Invoice Generator</h1>
+    <div class="container">
+        <!-- Editor Section -->
+        <div class="editor">
+            <h2>Editor</h2>
+            <button onclick="addText()">Add Text</button>
+            <button onclick="addTable()">Add Table</button>
+        </div>
+
+        <!-- Preview Section -->
+        <div class="preview">
+            <h2>Invoice Preview</h2>
+            <div id="invoiceContent">
+                <!-- Invoice content will be added here -->
+            </div>
+            <button onclick="downloadPDF()">Download PDF</button>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
